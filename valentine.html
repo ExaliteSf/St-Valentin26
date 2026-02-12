@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Tap to Reveal Love 💕</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="welcome-screen" class="screen active">
+        <h1 class="welcome-title">J'ai quelque chose pour toi…</h1>
+        <button id="open-btn" class="btn-primary">💌 Ouvre</button>
+    </div>
+    <div id="main-content" class="screen">
+        <div id="typewriter-section" class="section">
+            <p id="typewriter-text" class="typewriter"></p>
+        </div>
+
+        <div id="interactive-section" class="section hidden">
+            <button id="reveal-btn" class="btn-secondary">Appuie ici ❤️</button>
+            <div id="reasons-list" class="reasons-list"></div>
+        </div>
+
+        <div id="final-section" class="section hidden">
+            <p class="final-question">Alors… tu veux être ma Valentine pour toujours ?</p>
+            <div class="buttons-container">
+                <button id="yes-btn" class="btn-yes">OUI 💖</button>
+                <button id="no-btn" class="btn-no">NON 😈</button>
+            </div>
+        </div>
+        <div id="love-message" class="section hidden">
+            <h2 class="love-text">Je t'aime ❤️</h2>
+        </div>
+
+        <div id="hearts-container"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="hidden">
+        <p>Codé avec amour ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
